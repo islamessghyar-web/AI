@@ -38,7 +38,7 @@ if st.button("إنشاء الموقع 🚀", use_container_width=True):
             try:
                 # تهيئة نموذج Gemini
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel('gemini-3.1-Pro')
+                model = genai.GenerativeModel('gemini-3.5-flash')
                 
                 # توجيه النماذج للحصول على كود نقي ومستقل
                 full_prompt = (
